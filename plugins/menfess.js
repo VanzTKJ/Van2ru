@@ -25,7 +25,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         let txt = `Hai @${data.jid.split('@')[0]}, kamu menerima pesan Menfess nih.\n\nDari: *${name}*\nPesan: \n${pesan}\n\nMau balas pesan ini kak? bisa kak. kakak tinggal ketik pesan kakak nanti saya sampaikan ke *${name}*.`.trim();
         await conn.sendButton(data.jid, txt, wm, ['Balas Pesan', '.balasmenfess'], null)
         .then(() => {
-            m.reply('Berhasil mengirim pesan menfess.')
+            m.reply('Berhasil mengirim pesan menfess,Tolong follow tiktok admin @nafronanjay2 sebagai bentuk rasa terimakasih.')
             conn.menfess[id] = {
                 id,
                 dari: m.sender,
@@ -45,6 +45,6 @@ handler.tags = ['tes']
 handler.help = ['menfess', 'mf'].map(v => v + ' <nomor|nama pengirim|pesan>')
 handler.command = /^(mf|menfess)$/i
 handler.private = true
-handler.premium = true
+handler.premium = false
 
 export default handler
