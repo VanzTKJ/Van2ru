@@ -40,7 +40,7 @@ let tags = {
   '': 'No Category',
 }
 const defaultMenu = {
-  before: `*〔 llı INFO USER ıll 〕*
+  before: `*〔 llı ɪɴꜰᴏ ᴜꜱᴇʀ ıll 〕*
  
 ⛓️ *Name:* %name
 ⛓️ *Tag:* %name
@@ -52,14 +52,14 @@ const defaultMenu = {
 ⛓️ *Total Xp:* %totalexp
 
 
- *〔 llı TODAY ıll 〕*
+ *〔 llı ʜᴀʀɪ ɪɴɪ ıll 〕*
  
 ⛓️ *Days:* %week %weton
 ⛓️ *Date:* %date
 ⛓️ *Islamic Date:* %dateIslamic
 
 
- *〔 llı INFO ıll 〕*
+ *〔 llı ɪɴꜰᴏ ʙᴏᴛ ıll 〕*
  
 ⛓️ *Bot Name:* %me
 ⛓️ *Mode:* Public
@@ -70,7 +70,7 @@ const defaultMenu = {
 ⛓️ *Database:* %rtotalreg dari %totalreg
 
 
- *〔 llı INFO COMMAND ıll 〕*
+ *〔 llı ɪɴꜰᴏ ᴄᴏᴍᴍᴀɴᴅ ıll 〕*
  
  *🅟* = Premium
  *🅛* = Limit
@@ -182,12 +182,12 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     const valor = './thumbnail.jpg'
     let url = 'https://telegra.ph/file/9186962c3ffa47d6616c0.jpg'
     conn.sendButton(m.chat,
-`𝚂𝚒𝚖𝚙𝚕𝚎 𝙱𝚘𝚝 𝚆𝚑𝚊𝚝𝚜𝙰𝚙𝚙 | 𝙱𝚢 𝚇𝚢𝚗𝚘𝚣
+` *ꜰʀᴏɴʙᴏᴛ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴡʜᴀᴛꜱᴀᴘᴘꜱ*
 
 ${wish()} ${name}
-`, text.trim(), `https://telegra.ph/file/503fa88f7bc0248d5725e.jpg`, [
-      [`ꜱᴇᴡᴀʙᴏᴛ`, `${usedPrefix}sewa`],
-      [`۪۪ᴀᴜᴛʜᴏʀ ʙᴏᴛ`, `${usedPrefix}owner`]
+`, text.trim(), `https://telegra.ph/file/cea5869a97495c3220fdd.jpg`, [
+      [`ʙᴇʟɪ ʟɪᴍɪᴛ`, `${usedPrefix}buy 1 limit`],
+      [`۪۪ᴄᴇᴋ ʟɪᴍɪᴛ ꜱᴀʏᴀ`, `${usedPrefix}limit`]
     ], m, {asLocation: false})
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
@@ -213,19 +213,19 @@ function wish() {
   const time = moment.tz('Asia/Kolkata').format('HH')
   wishloc = ('Hi')
   if (time >= 0) {
-    wishloc = ('Selamat Malam🌃')
+    wishloc = ('𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐩𝐚𝐠𝐢🌃')
   }
   if (time >= 4) {
-    wishloc = ('Selamat Pagi🌄')
+    wishloc = ('𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐬𝐢𝐚𝐧𝐠🌄')
   }
   if (time >= 12) {
-    wishloc = ('Selamat Siang☀️')
+    wishloc = ('𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐬𝐨𝐫𝐞☀️')
   }
   if (time >= 16) {
-    wishloc = ('️ Selamat Malam🌇')
+    wishloc = ('️𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐦𝐚𝐥𝐚𝐦🌇')
   }
   if (time >= 23) {
-    wishloc = ('Selamat Malam🌙')
+    wishloc = ('𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐦𝐚𝐥𝐚𝐦🌙')
   }
   return wishloc
 }
