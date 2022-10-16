@@ -30,22 +30,22 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
       
 
 /*============== INFO OWNER ==============*/
-global.sig = 'https://instagram.com/erwinstore0'
-global.sgh = 'https://github.com/xynoz'
-global.sgc = 'https://chat.whatsapp.com/EY4qJSyz3W8CsjAxpPcfoI'
-global.swa = 'wa.me/6289520951385'
+global.sig = 'https://instagram.com/nafronam'
+global.sgh = '-'
+global.sgc = '-'
+global.swa = 'wa.me/6281252733108'
 
 /*============== PAYMENT ==============*/
-global.pdana = '089520951385'
-global.povo = '089520951385'
-global.pgopay = '089520951385'
-global.ppulsa = '089520951385'
-global.ppulsa2 = '089520951385'
-global.psaweria = 'https://saweria.co/Erwin123'
+global.pdana = '081252733108'
+global.povo = '081252733108'
+global.pgopay = '081252733108'
+global.ppulsa = '081252733108'
+global.ppulsa2 = '081252733108'
+global.psaweria = '-'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '08988350973'
-global.nomorown = '6289520951385'
+global.nomorbot = '082233236077'
+global.nomorown = '6281252733108'
 global.namebot = 'Erwin-Bot'
 global.nameown = 'E r w i n'
 
