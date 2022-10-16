@@ -32,7 +32,7 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== INFO OWNER ==============*/
 global.sig = 'https://instagram.com/nafronam'
 global.sgh = '-'
-global.sgc = '-'
+global.sgc = 'https://chat.whatsapp.com/EY4qJSyz3W8CsjAxpPcfoI'
 global.swa = 'wa.me/6281252733108'
 
 /*============== PAYMENT ==============*/
@@ -46,13 +46,13 @@ global.psaweria = '-'
 /*============== NOMOR ==============*/
 global.nomorbot = '082233236077'
 global.nomorown = '6281252733108'
-global.namebot = 'Erwin-Bot'
-global.nameown = 'E r w i n'
+global.namebot = 'Ŧ𝖗𝖔𝖓𝖇𝖔𝖙'
+global.nameown = '𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐟𝐫𝐨𝐧'
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6289520951385', 'Erwin', 'true']
+  ['6281252733108', '𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐟𝐫𝐨𝐧', 'true']
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -99,18 +99,18 @@ global.APIKeys = { // APIKey Here
 }
 
 /*============== WATERMARK ==============*/
-global.wm = 'ErwinBot | ʙу Erwin' //Main Watermark
-global.wm2 = 'Erwin-ʙᴏᴛᴢ'
-global.wm3 = 'Erwin-ʙᴏᴛᴢ | ʙу Erwin'
+global.wm = '𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐟𝐫𝐨𝐧 | ʙʏ Ŧ𝖗𝖔𝖓𝖇𝖔𝖙' //Main Watermark
+global.wm2 = '𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐟𝐫𝐨𝐧'
+global.wm3 = '𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐟𝐫𝐨𝐧 | ʙʏ Ŧ𝖗𝖔𝖓𝖇𝖔𝖙'
 global.botdate = `⻝ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⻝ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `⻝ 𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = `📮 Erwin-𝘽𝙤𝙩𝙯 | By ${global.nameown}`
-global.author = 'E r w i n✍' 
-global.packname = 'hm'
+global.titlebot = `Ŧ𝖗𝖔𝖓𝖇𝖔𝖙 | By ${global.nameown}`
+global.author = '𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐟𝐫𝐨𝐧' 
+global.packname = 'ᴛɪᴋᴛᴏᴋ : 𝐧𝐚𝐟𝐫𝐨𝐧𝐚𝐧𝐣𝐚𝐲𝟐'
 
 /*============== LOGO ==============*/
 global.thumb = 'https://telegra.ph/file/a94ebededebcbc792a12a.jpg' //Main Thumbnail
-global.imagebot = 'https://telegra.ph/file/a94ebededebcbc792a12a.jpg'
+global.imagebot = 'https://telegra.ph/file/b61bb71086eca8107155c.jpg'
 global.giflogo = 'https://telegra.ph/file/a94ebededebcbc792a12a.jpg'
 global.thumbs = ['https://telegra.ph/file/a94ebededebcbc792a12a.jpg']
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
@@ -126,7 +126,7 @@ global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.shee
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 
-global.thumbdoc = 'https://telegra.ph/file/a94ebededebcbc792a12a.jpg'
+global.thumbdoc = 'https://telegra.ph/file/b61bb71086eca8107155c.jpg'
 
 /*=========== FAKE SIZE ===========*/
 global.fsizedoc = '99999999999999' // default 10TB
@@ -155,8 +155,8 @@ global.lolm = 'Ⓛ'
 global.htjava = '❃' //hiasan Doang :v
 
 /*============== STICKER WM ==============*/
-global.stickpack = '⛩ＸｙｎｏｚＢｏｔｚ'
-global.stickauth = `ʙʏ xʏɴᴏᴢ`
+global.stickpack = 'ᴛɪᴋᴛᴏᴋ : 𝐧𝐚𝐟𝐫𝐨𝐧𝐚𝐧𝐣𝐚𝐲𝟐'
+global.stickauth = `ʙʏ Ŧ𝖗𝖔𝖓𝖇𝖔𝖙 | wa.me/6282233236077`
 
 global.multiplier = 38 // The higher, The harder levelup
 
