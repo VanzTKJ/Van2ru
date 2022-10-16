@@ -1,6 +1,6 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `
-     Enak aja mau gratis :v
+    Tobat!,Kiamat sudah dekat !!!!
 `.trim()
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '⚠️ *UP PREMIUM DULU SU* ⚠️', 'status@broadcast')
