@@ -36,7 +36,7 @@ export async function handler(chatUpdate) {
         if (!m)
             return
         m.exp = 0
-        m.limit = false
+        m.token = false
         try {
             // TODO: use loop to insert data instead of this
             let user = global.db.data.users[m.sender]
@@ -55,12 +55,12 @@ export async function handler(chatUpdate) {
                     user.haus = 100
                 if (!isNumber(user.laper)) 
                     user.laper = 100
-                if (!isNumber(user.limit))
-                    user.limit = 10
+                if (!isNumber(user.token))
+                    user.token = 10
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
-                if (!isNumber(user.joinlimit)) 
-                    user.joinlimit = 1
+                if (!isNumber(user.jointoken)) 
+                    user.jointoken = 1
                 if (!isNumber(user.pc)) 
                     user.pc = 0
                 if (!isNumber(user.ojekk)) 
@@ -349,12 +349,12 @@ if (!isNumber(user.ayam)) user.ayam = 0
                     user.premiumTime = 0
                 if (!user.lbars) 
                     user.lbars = '[▒▒▒▒▒▒▒▒▒]'
-                if (!isNumber(user.joinlimit))
-                    user.joinlimit = 0
+                if (!isNumber(user.jointoken))
+                    user.jointoken = 0
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 10,
+                    token: 10,
                     lastclaim: 0,
                     registered: false,
                     spammer: 0,
@@ -366,7 +366,7 @@ if (!isNumber(user.ayam)) user.ayam = 0
                     laper: 100,
                     stamina : 100,
                     pc : 0,
-                    joinlimit: 1,
+                    jointoken: 1,
                     coin: 0,
                     age: -1,
                     regTime: -1,
@@ -808,9 +808,9 @@ esteh: 0,
                     m.reply('Ngecit -_-') // Hehehe
                 else
                     m.exp += xp
-                if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `[❗] Limit Kamu 0 *${usedPrefix}buy limit*`, m)
-                    continue // Limit habis
+                if (!isPrems && plugin.token && global.db.data.users[m.sender].token < plugin.token * 1) {
+                    this.reply(m.chat, `[❗] 𝐓𝐨𝐤𝐞𝐧 𝐤𝐚𝐦𝐮 0 *${usedPrefix}buy token*`, m)
+                    continue // Token habis
                 }
                 if (plugin.level > _user.level) {
                     this.reply(m.chat, `[💬] Untuk menggunakan fitur ini Level kamu harus mempunyai Level ${plugin.level} untuk menggunakan Fitur ini\n*Level mu:* ${_user.level} 📊`, m)
@@ -842,7 +842,7 @@ esteh: 0,
                 try {
                     await plugin.call(this, m, extra)
                     if (!isPrems)
-                        m.limit = m.limit || plugin.limit || false
+                        m.token = m.token || plugin.token || false
                 } catch (e) {
                     // Error occured
                     m.error = e
@@ -868,8 +868,8 @@ esteh: 0,
                             console.error(e)
                         }
                     }
-                    if (m.limit)
-                        m.reply(' ️Kamu menggunakan fitur limit\n╰► - 1 Limit') // lain kali jangan lupa tanda kurung nya ya! ... fixed by Fokusdotid (Fokus ID)
+                    if (m.token)
+                        m.reply(' ️ꜰɪᴛᴜʀ ɪɴɪ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴛᴏᴋᴇɴ\n╰► 1 - ᴛᴏᴋᴇɴ ᴋᴀᴍᴜ ʙᴇʀᴋᴜʀᴀɴɢ') // lain kali jangan lupa tanda kurung nya ya! ... fixed by Fokusdotid (Fokus ID)
                 }
                 break
             }
@@ -887,7 +887,7 @@ esteh: 0,
         if (m) {
             if (m.sender && (user = global.db.data.users[m.sender])) {
                 user.exp += m.exp
-                user.limit -= m.limit * 1
+                user.token -= m.token * 1
             }
 
             let stat
