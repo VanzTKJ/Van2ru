@@ -122,7 +122,7 @@ function clearTmp() {
 }
 
 const hehe = async (jid, options) => {
-  let wm = 'Xynoz';
+  let wm = 'Nafron';
   let gambar = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png';
   try {
     gambar = await conn.profilePictureUrl(jid, 'image');
@@ -146,7 +146,7 @@ const hehe = async (jid, options) => {
         }
       }
     }
-    const txt = `\n[ ✅ ] Berhasil Terhubung Ke SC Xynoz:v.\nTerimakasih @${jid.split`@`[0]}, Karena sudah memberikan script gratis ini.\n\n\n📑Sumber Script:\nXynozOfficial`
+    const txt = `\n[ ✅ ] Berhasil Terhubung @${jid.split`@`[0]}, Bot sudah aktif`
     return await conn.sendMessage(jid, { text: txt, mentions: [jid], ...options }, { quoted: fkontak, ephemeralExpiration: 86400, ...options })
   }
 }
