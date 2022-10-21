@@ -12,7 +12,7 @@ let tags = {
   'main': 'Main',
   'game': 'Game',
   'rpg': 'RPG Games',
-  'xp': 'Exp & Limit',
+  'xp': 'Exp & token',
   'sticker': 'Sticker',
   'kerang': 'Kerang Ajaib',
   'quotes': 'Quotes',
@@ -40,26 +40,26 @@ let tags = {
   '': 'No Category',
 }
 const defaultMenu = {
-  before: `*〔 llı ɪɴꜰᴏ ᴜꜱᴇʀ ıll 〕*
+  before: `*「 ɪɴꜰᴏ ᴜꜱᴇʀ 」*
  
 ⛓️ *Name:* %name
 ⛓️ *Tag:* %name
 ⛓️ *Status:* %prems
-⛓️ *Limit:* %limit
+⛓️ *token:* %token
 ⛓️ *Role:* %role
 ⛓️ *Level:* %level [ %xp4levelup Xp For Levelup]
 ⛓️ *Xp:* %exp / %maxexp
 ⛓️ *Total Xp:* %totalexp
 
 
- *〔 llı ʜᴀʀɪ ɪɴɪ ıll 〕*
+ *「 ʜᴀʀɪ ɪɴɪ 」*
  
 ⛓️ *Days:* %week %weton
 ⛓️ *Date:* %date
 ⛓️ *Islamic Date:* %dateIslamic
 
 
- *〔 llı ɪɴꜰᴏ ʙᴏᴛ ıll 〕*
+ *「 ɪɴꜰᴏ ʙᴏᴛ 」*
  
 ⛓️ *Bot Name:* %me
 ⛓️ *Mode:* Public
@@ -70,21 +70,21 @@ const defaultMenu = {
 ⛓️ *Database:* %rtotalreg dari %totalreg
 
 
- *〔 llı ɪɴꜰᴏ ᴄᴏᴍᴍᴀɴᴅ ıll 〕*
+ *「 ᴀʀᴛɪ ꜱɪᴍʙᴏʟ 」*
  
- *🅟* = Premium
- *🅛* = Limit
+ *🅟* = Fitur Khusus Premium
+ *🅛* = Fitur Menggunakan token
 
 %readmore`.trimStart(),
   header: '❏┄┅━┅┄〈 *〘 %category 〙*\n│',
-    body: '┊≫ %cmd %islimit %isPremium',
+    body: '┊≫ %cmd %istoken %isPremium',
   footer: '│\n┗━═┅═━━┅┄๑\n',
   after: `  ${'✧\n┬ 📮 *Note* :\n│ 𝙹𝙸𝙺𝙰 𝙼𝙴𝙻𝙰𝙽𝙶𝙶𝙰𝚁 𝚃𝙾𝚂 𝙰𝙺𝙰𝙽 𝙳𝙸 𝙱𝙰𝙽 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽! ^_^\n╰━━━━━━━━━━━━━━━━┈─◂'}`,
 }
 let handler = async (m, { conn, usedPrefix, __dirname }) => {
   try {
     let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
-    let { exp, limit, level, role } = global.db.data.users[m.sender]
+    let { exp, token, level, role } = global.db.data.users[m.sender]
     let { min, xp, max } = xpRange(level, global.multiplier)
     let name = await conn.getName(m.sender)
     let d = new Date(new Date + 3600000)
@@ -128,7 +128,7 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
         help: Array.isArray(plugin.tags) ? plugin.help : [plugin.help],
         tags: Array.isArray(plugin.tags) ? plugin.tags : [plugin.tags],
         prefix: 'customPrefix' in plugin,
-        limit: plugin.limit,
+        token: plugin.token,
         premium: plugin.premium,
         enabled: !plugin.disabled,
       }
@@ -150,7 +150,7 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
           ...help.filter(menu => menu.tags && menu.tags.includes(tag) && menu.help).map(menu => {
             return menu.help.map(help => {
               return body.replace(/%cmd/g, menu.prefix ? help : '%p' + help)
-                .replace(/%islimit/g, menu.limit ? '🅛' : '')
+                .replace(/%istoken/g, menu.token ? '🅛' : '')
                 .replace(/%isPremium/g, menu.premium ? '🅟' : '')
                 .trim()
             }).join('\n')
@@ -173,7 +173,7 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
       totalexp: exp,
       xp4levelup: max - exp,
       github: _package.homepage ? _package.homepage.url || _package.homepage : '[unknown github url]',
-      level, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
+      level, token, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
@@ -186,8 +186,8 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
 
 ${wish()} ${name}
 `, text.trim(), `https://telegra.ph/file/cea5869a97495c3220fdd.jpg`, [
-      [`ʙᴇʟɪ ʟɪᴍɪᴛ`, `${usedPrefix}buy 1 limit`],
-      [`۪۪ᴄᴇᴋ ʟɪᴍɪᴛ ꜱᴀʏᴀ`, `${usedPrefix}limit`]
+      [`ʙᴇʟɪ ᴛᴏᴋᴇɴ`, `${usedPrefix}buy 1 token`],
+      [`۪۪ᴄᴇᴋ ᴛᴏᴋᴇɴ ꜱᴀʏᴀ`, `${usedPrefix}token`]
     ], m, {asLocation: false})
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
@@ -199,7 +199,7 @@ handler.tags = ['info', 'main']
 
 handler.command = /^(menu|help)$/i
 
-handler.limit = true
+handler.token = true
 
 handler.exp = 3
 
