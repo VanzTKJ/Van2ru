@@ -56,7 +56,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.laper)) 
                     user.laper = 100
                 if (!isNumber(user.token))
-                    user.token = 10
+                    user.token = 100
                 if (!isNumber(user.lastclaim))
                     user.lastclaim = 0
                 if (!isNumber(user.jointoken)) 
@@ -354,7 +354,7 @@ if (!isNumber(user.ayam)) user.ayam = 0
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
-                    token: 10,
+                    token: 100,
                     lastclaim: 0,
                     registered: false,
                     spammer: 0,
@@ -398,7 +398,7 @@ if (!isNumber(user.ayam)) user.ayam = 0
                     atm: 0,
                     fullatm: 0,
                     health: 100,
-                    potion: 10,
+                    potion: 30,
                     trash: 0,
                     wood: 0,
                     rock: 0,
