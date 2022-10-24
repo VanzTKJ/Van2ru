@@ -17,6 +17,6 @@ handler.tags = ['tools']
 handler.command = /^spam(wa)?$/i
 handler.group = false
 handler.premium = true
-handler.private = true
+handler.private = false
 handler.limit = false
 export default handler
