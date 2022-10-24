@@ -39,17 +39,16 @@ let handler = async(m, { conn, text }) => {
 handler.help = ['groupspam'].map(v => v + ' <teks>')
 handler.tags = ['group']
 handler.command = /^(groupspam)$/i
-handler.owner = false
+handler.owner = true
 handler.mods = false
-handler.premium = true
-handler.group = true
+handler.premium = false
+handler.group = false
 handler.private = false
 
-handler.admin = true
+handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.exp = 100
-handler.limit = true
+handler.limit = false
 
 export default handler 
