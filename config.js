@@ -1,7 +1,6 @@
-/*
-Script By Xynoz 📮
-No Enc? Chat wa.me/6283839200413
-*/
+//follow tiktok :@nafronanjay2
+//selamat memakai
+//kasih jangan lupa kasih star kak ^-^
 
 import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
@@ -30,18 +29,18 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
       
 
 /*============== INFO OWNER ==============*/
-global.sig = 'https://instagram.com/nafronam'
-global.sgh = '-'
-global.sgc = 'https://chat.whatsapp.com/EY4qJSyz3W8CsjAxpPcfoI'
-global.swa = 'wa.me/6281252733108'
+global.sig = 'https://instagram.com/nafronam'// instagram kamu
+global.sgh = '-' //github kamu
+global.sgc = 'https://chat.whatsapp.com/EY4qJSyz3W8CsjAxpPcfoI'//grubwa kamu
+global.swa = 'wa.me/6281252733108'//nomor kamu
 
 /*============== PAYMENT ==============*/
-global.pdana = '081252733108'
+global.pdana = '081252733108'//pembayaran kalau ada yang mau beli
 global.povo = '081252733108'
 global.pgopay = '081252733108'
 global.ppulsa = '081252733108'
 global.ppulsa2 = '081252733108'
-global.psaweria = '-'
+global.psaweria = 'https://saweria.co/nafron'//saweria kamu,kalau gak punya kosongin tidak apa"
 
 /*============== NOMOR ==============*/
 global.nomorbot = '082233236077'
@@ -104,9 +103,9 @@ global.wm2 = '𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐟𝐫𝐨𝐧'
 global.wm3 = '𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐟𝐫𝐨𝐧 | ʙʏ Ŧ𝖗𝖔𝖓𝖇𝖔𝖙'
 global.botdate = `⻝ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⻝ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `⻝ 𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = `Ŧ𝖗𝖔𝖓𝖇𝖔𝖙 | By ${global.nameown}`
-global.author = '𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐟𝐫𝐨𝐧' 
-global.packname = 'ᴛɪᴋᴛᴏᴋ : 𝐧𝐚𝐟𝐫𝐨𝐧𝐚𝐧𝐣𝐚𝐲𝟐'
+global.titlebot = `Ŧ𝖗𝖔𝖓𝖇𝖔𝖙 | By ${global.nameown}` // isi bebas
+global.author = '𝐌𝐮𝐡𝐚𝐦𝐦𝐚𝐝 𝐍𝐚𝐟𝐫𝐨𝐧' // pemilik?
+global.packname = 'ᴛɪᴋᴛᴏᴋ : 𝐧𝐚𝐟𝐫𝐨𝐧𝐚𝐧𝐣𝐚𝐲𝟐'//bebas
 
 /*============== LOGO ==============*/
 global.thumb = 'https://telegra.ph/file/a94ebededebcbc792a12a.jpg' //Main Thumbnail
@@ -155,8 +154,8 @@ global.lolm = 'Ⓛ'
 global.htjava = '❃' //hiasan Doang :v
 
 /*============== STICKER WM ==============*/
-global.stickpack = 'ᴛɪᴋᴛᴏᴋ : 𝐧𝐚𝐟𝐫𝐨𝐧𝐚𝐧𝐣𝐚𝐲𝟐'
-global.stickauth = `ʙʏ Ŧ𝖗𝖔𝖓𝖇𝖔𝖙 | wa.me/6282233236077`
+global.stickpack = 'ᴛɪᴋᴛᴏᴋ : 𝐧𝐚𝐟𝐫𝐨𝐧𝐚𝐧𝐣𝐚𝐲𝟐'//stiker watermark
+global.stickauth = `ʙʏ Ŧ𝖗𝖔𝖓𝖇𝖔𝖙 | wa.me/6282233236077`//sama aja
 
 global.multiplier = 38 // The higher, The harder levelup
 
