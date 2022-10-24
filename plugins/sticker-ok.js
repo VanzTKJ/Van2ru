@@ -17,5 +17,5 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 let stikerhuuu = [
- "https://telegra.ph/file/f61a7c96f3f86b6c5214f.png",
+ "https://telegra.ph/file/366c6f89ff206d5fd27ca.png",
 ]
