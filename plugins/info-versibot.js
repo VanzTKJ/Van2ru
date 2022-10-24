@@ -1,9 +1,9 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `
-     Version 4.0.1
+     Version 0.1
 `.trim()
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', ' *Beli SC Xynoz?55K* ', 'status@broadcast')
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', ' *Versi saat ini* ', 'status@broadcast')
 }
 handler.help = ['cekversi']
 handler.tags = ['info']
