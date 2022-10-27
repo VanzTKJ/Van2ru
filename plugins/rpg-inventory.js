@@ -6,7 +6,7 @@ import adventure from './rpg-adventure.js'
 const inventory = {
   others: {
     level: true,
-    limit: true,
+    token: true,
     joinlimit: true,
     health: true,
     money: true,
