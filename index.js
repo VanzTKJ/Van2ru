@@ -16,15 +16,15 @@ const { name, author } = require(join(__dirname, './package.json')) // https://w
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('XYNOZBOTZ', {
+say('FRONBOT', {
   font: 'pallet',
   align: 'center',
-  colors: ['white']
+  colors: ['red']
 })
-say(`⧻ XYNOZ By @${global.nameown}`, { 
+say(`⧻ FRONBOT By @${global.nameown}`, { 
   font: 'console',
   align: 'center',
-  colors: ['white']
+  colors: ['green']
 })
 
 var isRunning = false
@@ -92,3 +92,4 @@ function start(file) {
 }
 
 start('main.js')
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
