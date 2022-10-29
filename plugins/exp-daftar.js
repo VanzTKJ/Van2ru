@@ -50,7 +50,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 
 const listMessage = {
   text: `│›Please select your age at the bottom button...`,
-  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔>  BOT PRIVATE\n⚘ ᴄʀᴇᴀᴛᴇ ʙʏ xʏɴᴏᴢ`,
+  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔>  BOT GRATIS SPEED MANTAP\nTiktok:nafronanjay2`,
   title: "▢━━━━「 DAFTAR 」━━━━▢",
   buttonText: "Pilih di bawah",
   sections
@@ -63,8 +63,8 @@ const listMessage = {
   if (!name) throw 'Nama tidak boleh kosong (Alphanumeric)'
   if (!age) throw 'Umur tidak boleh kosong (Angka)'
   age = parseInt(age)
-  if (age > 30) throw 'WOI TUA (。-`ω´-)'
-  if (age < 5) throw 'Halah dasar bocil'
+  if (age > 30) throw 'Bapack - Bapack (。-`ω´-)'
+  if (age < 5) throw 'Baru Netes dah main HP Anjay'
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
