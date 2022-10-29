@@ -186,7 +186,7 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
 
 ${wish()} ${name}
 `, text.trim(), `https://telegra.ph/file/cea5869a97495c3220fdd.jpg`, [
-      [`ʙᴇʟɪ ᴛᴏᴋᴇɴ`, `${usedPrefix}buy 1 token`],
+      [`ꜱᴇᴡᴀ ʙᴏᴛ [ʙᴇʀɢᴀʀᴀɴꜱɪ]`, `${usedPrefix}buy 1 sewabot`],
       [`۪۪ᴄᴇᴋ ᴛᴏᴋᴇɴ ꜱᴀʏᴀ`, `${usedPrefix}token`]
     ], m, {asLocation: false})
   } catch (e) {
