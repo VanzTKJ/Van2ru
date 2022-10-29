@@ -9,30 +9,30 @@ let handler = async function (m, { text, usedPrefix, command }) {
 	let namae = conn.getName(m.sender)
 	const sections = [
 	{
-	title: "📆Select Your Age Here !",
+	title: "📆 Umur Berapa Kamu?",
 	rows: [
-	    {title: "📛Random Years", rowId: '.daftar ' + namae + '.' + pickRandom(['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9'])}
+	    {title: "📛Random Umur", rowId: '.daftar ' + namae + '.' + pickRandom(['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9'])}
 	]
     },
     {
 	title: "🎀O L D",
 	rows: [
-	    {title: "🌸30• Years ʚĭɞ", rowId: '.daftar ' + namae + '.30 '},
-	    {title: "🎐29• Years ʚĭɞ", rowId: '.daftar ' + namae + '.29 '},
-	    {title: "🌸28• Years ʚĭɞ", rowId: '.daftar ' + namae + '.28 '},
-	{title: "🎐27• Years ʚĭɞ", rowId: '.daftar ' + namae + '.27 '},
-	{title: "🌸26• Years ʚĭɞ", rowId: '.daftar ' + namae + '.26 '},
-	{title: "🎐25• Years ʚĭɞ", rowId: '.daftar ' + namae + '.25 '},
-	{title: "🌸24• Years ʚĭɞ", rowId: '.daftar ' + namae + '.24 '},
-	{title: "🎐23• Years ʚĭɞ", rowId: '.daftar ' + namae + '.23 '},
-	{title: "🌸22• Years ʚĭɞ", rowId: '.daftar ' + namae + '.22 '},
-	{title: "🎐21• Years ʚĭɞ", rowId: '.daftar ' + namae + '.21 '}
+	    {title: "🌸30• Tahun", rowId: '.daftar ' + namae + '.30 '},
+	    {title: "🎐29• Tahun", rowId: '.daftar ' + namae + '.29 '},
+	    {title: "🌸28• Tahun", rowId: '.daftar ' + namae + '.28 '},
+	{title: "🎐27• Tahun", rowId: '.daftar ' + namae + '.27 '},
+	{title: "🌸26•Tahun", rowId: '.daftar ' + namae + '.26 '},
+	{title: "🎐25• Tahun", rowId: '.daftar ' + namae + '.25 '},
+	{title: "🌸24• Tahun", rowId: '.daftar ' + namae + '.24 '},
+	{title: "🎐23• Tahun", rowId: '.daftar ' + namae + '.23 '},
+	{title: "🌸22• Tahun", rowId: '.daftar ' + namae + '.22 '},
+	{title: "🎐21• Tahun", rowId: '.daftar ' + namae + '.21 '}
 	]
     },
     {
 	title: "🎀Y O U N G",
 	rows: [
-	    {title: "🌸20• Years ʚĭɞ", rowId: '.daftar ' + namae + '.20 '},
+	    {title: "🌸20• Tahun", rowId: '.daftar ' + namae + '.20 '},
 	    {title: "🎐19• Years ʚĭɞ", rowId: '.daftar ' + namae + '.19 '},
 	    {title: "🌸18• Years ʚĭɞ", rowId: '.daftar ' + namae + '.18 '},
 	{title: "🎐17• Years ʚĭɞ", rowId: '.daftar ' + namae + '.17 '},
@@ -51,8 +51,8 @@ let handler = async function (m, { text, usedPrefix, command }) {
 const listMessage = {
   text: `│›Please select your age at the bottom button...`,
   footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔>  BOT PRIVATE\n⚘ ᴄʀᴇᴀᴛᴇ ʙʏ xʏɴᴏᴢ`,
-  title: "▢━━━━「 Registration 」━━━━▢",
-  buttonText: "ഒ Register ഒ",
+  title: "▢━━━━「 DAFTAR 」━━━━▢",
+  buttonText: "Pilih di bawah",
   sections
 }
 
@@ -72,7 +72,7 @@ const listMessage = {
   let sn = createHash('md5').update(m.sender).digest('hex')
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
   let cap = `
-  ━━━━ 「 *Successful Registration* 」━━━
+  ━━━━ 「 *SUKSES* 」━━━
   .
 ╭━━「 *ᴜsᴇʀs* 」
 │▸ *sᴛᴀᴛᴜs:* ☑️ sᴜᴄᴄᴇssғᴜʟ
@@ -80,14 +80,11 @@ const listMessage = {
 │▸ *ᴀɢᴇ:* ${age} ʏᴇᴀʀs
 │▸ *sɴ:* ${sn}
 ╰═┅═━––––––๑
-
-http://xnxx.comᯤ
-ꜱᴜʙꜱᴄʀɪʙᴇ ʏᴛ: Xynoz
 `
   let buttonMessage= {
 'document':{'url':'https://instagram.com/fiikrah26_?igshid=YmMyMTA2M2Y='},
 'mimetype':global.ddocx,
-'fileName':'▢━━━━「 Registration 」━━━━▢',
+'fileName':'▢━━━━「 Daftar 」━━━━▢',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'contextInfo':{
@@ -104,8 +101,8 @@ http://xnxx.comᯤ
 'caption':cap,
 'footer':botdate,
 'buttons':[
-{'buttonId':'.menu','buttonText':{'displayText':'▣ Mҽɳυ ▣'},'type':1},
-{'buttonId':'.salken','buttonText':{'displayText':'🎈Hαʅʅσ'},'type':1}
+{'buttonId':'.menu','buttonText':{'displayText':'𝖒𝖊𝖓𝖚 '},'type':1},
+{'buttonId':'.sewabot','buttonText':{'displayText':'ꜱᴇᴡᴀ ʙᴏᴛ [ʙᴇʀɢᴀʀᴀɴꜱɪ]'},'type':1}
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
