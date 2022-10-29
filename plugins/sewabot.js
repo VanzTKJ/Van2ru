@@ -3,9 +3,9 @@ import fetch from 'node-fetch'
 //Plugin By Xynoz!!
 let handler = async (m, { conn, usedPrefix }) => {
 
-    conn.sendButton(m.chat, '*❲ ꜱᴇᴡᴀ ʙᴏᴛ ❳*\n\n⎇ 1ʙᴜʟᴀɴ 6ᴋ\n⎇ 2ʙᴜʟᴀɴ 12ᴋ\n⎇ 6ʙᴜʟᴀɴ 36ᴋ\n⎇ 1ᴛᴀʜᴜɴ 72ᴋ\n\n*ᴍɪɴᴀᴛ ᴄʜᴀᴛ ᴏᴡɴᴇʀ*', wm, null, [['Owner', '/owner']],m)
+    conn.sendButton(m.chat, '* 『 ꜱᴇᴡᴀ ʙᴏᴛ 』 *\n\n⎇ 1 ʙᴜʟᴀɴ 5 ʀɪʙᴜ\n⎇ 4 ʙᴜʟᴀɴ 15 ʀɪʙᴜ\n⎇ 6 ʙᴜʟᴀɴ 20 ʀɪʙᴜ \n *ᴋᴇɴᴀᴘᴀ ʜᴀʀᴜꜱ ꜱᴇᴡᴀ ꜰʀᴏɴʙᴏᴛ ? *\n - ꜰʀᴏɴʙᴏᴛ ᴛᴀᴋ ʟᴀɢɪ ᴍᴇɴɢᴀʟᴀᴍɪ ᴍᴀꜱᴀʟᴀʜ ᴏꜰꜰʟɪɴᴇ \n- ᴀᴅᴍɪɴ ꜰᴀꜱᴛ ʀᴇꜱᴘᴏɴ \n - ᴋᴇᴄᴇᴘᴀᴛᴀɴ ʙᴏᴛ ʀᴇꜱᴘᴏɴ ᴛɪɴɢɢɪ \n ᴀᴘᴀʙɪʟᴀ ᴀᴅᴀ ɢᴀɴɢɢᴜᴀɴ ʙᴏᴛ ᴀᴅᴍɪɴ ᴍᴇᴍʙᴇʀɪ ɢᴀʀᴀɴꜱɪ ᴋᴇᴘᴀᴅᴀ ᴋᴀʟɪᴀɴ\n*ꜱɪꜱᴛᴇᴍ ꜱᴇᴡᴀ : ʙᴀʏᴀʀ - ʙᴏᴛ ᴍᴀꜱᴜᴋ ᴋᴇ ɢʀᴜᴘ - ᴋᴇʟᴜᴀʀ ꜱᴇꜱᴜᴀɪ ᴅᴜʀᴀꜱɪ ꜱᴇᴡᴀ*', wm, null, [['Kontak Admin', '/owner']],m)
 }
-handler.command = /^(sewabot|sewa|belibot)$/i
+handler.command = /^(sewabot)$/i
 handler.tags = ['info']
 handler.help = ['sewabot']
 handler.premium = false
