@@ -7,7 +7,7 @@ export async function all(m) {
         if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 5) {
             if (this.spam[m.sender].count > 5) {
                 global.db.data.users[m.sender].banned = true
-                m.reply('*📮Kamu di banned karena spam,Untuk membuka banned perlu membayar pajak 1000 rupiah apabila kamu sanggup hubungin pemilik bot ini*\n\n*💬Laporkan masalah ini ke wa.me/6281252733108?text=📧Bang+saya+ingin+membuka+banned,+saya+akan+membayar+pajak+1000')
+                m.reply('*JANGAN SPAM !!!*\n\n*💬Laporkan masalah ini ke wa.me/6281252733108?text=📧Bang+saya+ingin+membuka+banned,+saya+akan+membayar+pajak+1000')
             }
             this.spam[m.sender].count = 0
             this.spam[m.sender].lastspam = m.messageTimestamp.toNumber()
