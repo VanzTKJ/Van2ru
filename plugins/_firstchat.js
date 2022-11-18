@@ -6,10 +6,10 @@ export async function before(m) {
     let user = global.db.data.users[m.sender]
     let txt = `👋Hai, ${ucapan()}
 
-${user.banned ? '📮Maaf, kamu dibanned & Tidak bisa menggunakan bot ini lagi,hubungin pemilik bot agar di buka kembali' : `💬 Saya Ŧ𝖗𝖔𝖓𝖇𝖔𝖙 Asisten whatsapps siap membantu anda,sebelum itu yuk daftar dulu pencet di bawah ^-^`}`.trim()
+${user.banned ? '📮Maaf, kamu dibanned & Tidak bisa menggunakan bot ini lagi,hubungin pemilik bot agar di buka kembali' : `💬 Saya Ŧ𝖗𝖔𝖓𝖇𝖔𝖙 Asisten whatsapps siap membantu anda ^-^`}`.trim()
 
     if (new Date() - user.pc < 21600000) return // waktu ori 21600000 (6 jam)
-    await this.sendButton(m.chat, txt, user.banned ? wm : 'PENTING: ᴀᴛᴜʀᴀɴ ᴅɪ ʟᴀʀᴀɴɢ ᴛᴇʟꜰᴏɴ ʙᴏᴛ ᴀᴛᴀᴜ ᴋᴀʟɪᴀɴ ᴀᴋᴀɴ ᴅɪ ʙʟᴏᴋɪʀ ᴏᴛᴏᴍᴀᴛɪꜱ!', [user.banned ? 'ᴘᴇᴍɪʟɪᴋ ʙᴏᴛ' : 'ᴅᴀꜰᴛᴀʀ ᴅɪʀɪ', user.banned ? '.owner' : '.daftar'], m)
+    await this.sendButton(m.chat, txt, user.banned ? wm : 'PENTING: ᴀᴛᴜʀᴀɴ ᴅɪ ʟᴀʀᴀɴɢ ᴛᴇʟꜰᴏɴ ʙᴏᴛ ᴀᴛᴀᴜ ᴋᴀʟɪᴀɴ ᴀᴋᴀɴ ᴅɪ ʙʟᴏᴋɪʀ ᴏᴛᴏᴍᴀᴛɪꜱ!', [user.banned ? 'ᴘᴇᴍɪʟɪᴋ ʙᴏᴛ' : 'ᴍᴇɴᴜ', user.banned ? '.owner' : '.menu'], m)
     user.pc = new Date * 1
 }
 
