@@ -1,6 +1,4 @@
-// 📮 Made In Xynoz 
-// Subscribe YouTube Xynoz!
-// Tq To Jangan Di Hpus!!
+//
 
 import { promises } from 'fs'
 import { join } from 'path'
@@ -42,32 +40,32 @@ let tags = {
 const defaultMenu = {
   before: `*「 ɪɴꜰᴏ ᴜꜱᴇʀ 」*
  
-⛓️ *Name:* %name
-⛓️ *Tag:* %name
-⛓️ *Status:* %prems
-⛓️ *token:* %token
-⛓️ *Role:* %role
-⛓️ *Level:* %level [ %xp4levelup Xp For Levelup]
-⛓️ *Xp:* %exp / %maxexp
-⛓️ *Total Xp:* %totalexp
+┆ *ɴᴀᴍᴀ ᴋᴀᴍᴜ:* %name
+┆ *ᴛᴀɢ:* %name
+┆ *ꜱᴛᴀᴛᴜ:* %prems
+┆ *ᴛᴏᴋᴇɴ ᴋᴀᴍᴜ:* %token
+┆ *ʀᴀɴᴋ / ʀᴏʟᴇ ᴋᴀᴍᴜ:* %role
+┆ *ʟᴇᴠᴇʟ ᴋᴀᴍᴜ:* %level [ %xp4levelup Xp For Levelup]
+┆ *ᴇxᴘ:* %exp / %maxexp
+┆ *ᴛᴏᴛᴀʟ ᴇxᴘ:* %totalexp
 
 
  *「 ʜᴀʀɪ ɪɴɪ 」*
  
-⛓️ *Days:* %week %weton
-⛓️ *Date:* %date
-⛓️ *Islamic Date:* %dateIslamic
+┆ *ʜᴀʀɪ:* %week %weton
+┆ *ᴛᴀɴɢɢᴀʟ:* %date
+┆ *ᴛᴀɴɢɢᴀʟ ɪꜱʟᴀᴍ:* %dateIslamic
 
 
  *「 ɪɴꜰᴏ ʙᴏᴛ 」*
  
-⛓️ *Bot Name:* %me
-⛓️ *Mode:* Public
-⛓️ *Platform:* Linux
-⛓️ *Type:* Node.Js
-⛓️ *Baileys:* Multi Device
-⛓️ *Uptime:* %muptime
-⛓️ *Database:* %rtotalreg dari %totalreg
+┆ *ɴᴀᴍᴀ ʙᴏᴛ:* %me
+┆ *ᴍᴏᴅᴇ ʙᴏᴛ:* Public & Bot Gratis
+┆ *Platform:* Linux
+┆ *Type:* Node.Js
+┆ *Baileys:* Multi Device
+┆ *ᴛᴇʟᴀʜ ᴀᴋᴛɪꜰ ꜱᴇᴊᴀᴋ:* %muptime
+┆ *ᴘᴇɴɢɢᴜɴᴀ ᴛᴇʀᴅᴀꜰᴛᴀʀ ꜰʀᴏɴʙᴏᴛ:* %rtotalreg dari %totalreg
 
 
  *「 ᴀʀᴛɪ ꜱɪᴍʙᴏʟ 」*
@@ -187,7 +185,7 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
 ${wish()} ${name}
 `, text.trim(), `https://telegra.ph/file/cea5869a97495c3220fdd.jpg`, [
       [`ꜱᴇᴡᴀ ʙᴏᴛ [ʙᴇʀɢᴀʀᴀɴꜱɪ]`, `${usedPrefix}sewabot`],
-      [`۪۪ᴄᴇᴋ ᴛᴏᴋᴇɴ ꜱᴀʏᴀ`, `${usedPrefix}token`]
+      [`۪۪ᴋɪʀɪᴍ ᴘᴇꜱᴀɴ ʀᴀʜᴀꜱɪᴀ`, `${usedPrefix}menfess`]
     ], m, {asLocation: false})
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
